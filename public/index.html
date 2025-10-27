@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AstraPanel | Login</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="brand">
+        <h2 id="panelName">AstraPanel</h2>
+      </div>
+      <nav>
+        <a href="#" class="nav-link active">🏠 Dashboard</a>
+        <a href="#" class="nav-link">💠 Instances</a>
+        <a href="#" class="nav-link">🧩 Nodes</a>
+        <a href="#" class="nav-link">🖥️ Servers</a>
+        <a href="#" class="nav-link">👥 Users</a>
+        <a href="#" class="nav-link">⚙️ Settings</a>
+      </nav>
+      <button id="logoutBtn" class="logout-btn">🚪 Logout</button>
+    </aside>
+
+    <!-- Main Section -->
+    <main class="main">
+      <!-- Header -->
+      <header class="header">
+        <h1 id="welcomeText">Welcome to AstraPanel</h1>
+      </header>
+
+      <!-- Login Card -->
+      <section class="card login-card" id="loginCard">
+        <h2>Admin Login</h2>
+        <form id="loginForm">
+          <label>Username</label>
+          <input name="username" value="IamAman" />
+          <label>Password</label>
+          <input name="password" type="password" value="Mishra@123" />
+          <div style="text-align:right;margin-top:15px;">
+            <button type="submit" class="btn login-btn">Login</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Dashboard -->
+      <section class="grid" id="dashboardGrid" style="display:none;">
+        <div class="stat card">
+          <div class="stat-title">Total Servers</div>
+          <div class="stat-value" id="totalServers">—</div>
+        </div>
+        <div class="stat card">
+          <div class="stat-title">Total Users</div>
+          <div class="stat-value" id="totalUsers">—</div>
+        </div>
+        <div class="stat card">
+          <div class="stat-title">Available RAM (MB)</div>
+          <div class="stat-value" id="availableRam">—</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/dashboard.js"></script>
+</body>
+</html>
